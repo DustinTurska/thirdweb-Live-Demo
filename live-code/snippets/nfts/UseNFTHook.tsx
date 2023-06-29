@@ -16,10 +16,13 @@ const code = `function App() {
   if (!nft) return <div>NFT not found</div>;
   
   return <div style={{display:'flex', flexDirection:'column'}}>
-    <strong>{nft.metadata.name}</strong>
-    <img src={nft.metadata.image}
+  <h2>{nft.metadata.name}</h2>
+  <img
+    src={nft.metadata.image}
+    alt={nft.metadata.name}
     style={{ maxWidth: "300px" }} // Apply max width of 300px
   />
+  <p>{nft.metadata.description}</p>
   </div>;
 }`;
 
