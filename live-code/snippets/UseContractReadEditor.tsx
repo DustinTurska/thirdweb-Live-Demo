@@ -11,8 +11,8 @@ const code = `function App() {
   // Read contract with arguments
   const { data, isLoading, error } = useContractRead(
     contract,
-    "getName",
-    ["arg1", "arg2"],
+    "name",
+    [],
   );
 
   if (error) {

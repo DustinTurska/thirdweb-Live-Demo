@@ -20,7 +20,7 @@ const scope = {
 
 const code = `function App() {
   const { contract } = useContract(
-    "0x4935154046C2f281AcE726018149F1a25449910d",
+    "0x5907C77D0b413304667d1764b479ED70eF659e52",
     "nft-drop"
   );
   const address = useAddress();

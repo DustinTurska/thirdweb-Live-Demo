@@ -13,6 +13,22 @@
   align-items: center;
 }
 
+.btn {
+  background-color: var(--tw-color1);
+  outline: none;
+  border: none;
+  color: var(--white);
+  height: 48px;
+  padding: 0 24px;
+  border-radius: 999px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: background-color 300ms ease-in-out;
+  transform-origin: center;
+}
+
 .title a {
   color: #f213a4;
   text-decoration: none;

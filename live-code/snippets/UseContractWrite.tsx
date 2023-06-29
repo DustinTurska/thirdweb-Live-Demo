@@ -8,7 +8,7 @@ const code = `function App() {
     const { contract } = useContract("0x5907C77D0b413304667d1764b479ED70eF659e52");
     const { mutateAsync, isLoading, error } = useContractWrite(
       contract,
-      "setName",
+      "claim",
     );
   
     return (

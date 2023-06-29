@@ -29,7 +29,6 @@ function LiveCodeEditor({ code, additionalScope }: Props) {
   return (
     <ChainContext.Provider value={{ selectedChain, setSelectedChain }}>
       <ThirdwebProvider activeChain={selectedChain}>
-        <Navbar />
         <LiveProvider
           code={code}
           scope={{
