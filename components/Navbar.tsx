@@ -14,7 +14,7 @@ export function Navbar() {
     <div className={styles.navContainer}>
       <nav className={styles.nav}>
         <div className={styles.navLeft}>
-          <Link href="https://thirdweb.com/dashboard/" className={`${styles.homeLink} ${styles.navLeft}`} target="_blank">
+          <Link href="/" className={`${styles.homeLink} ${styles.navLeft}`}>
             <Image
               src="/thirdweb.svg"
               width={48}
