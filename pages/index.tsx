@@ -60,6 +60,13 @@ const Home: NextPage = () => {
               Live code editor for thirdweb Tokens
             </p>
           </a>
+
+          <a href="./evm" className={styles.card}>
+            <h2>EVM &rarr;</h2>
+            <p>
+              Live code editor for thirdweb EVM SDK
+            </p>
+          </a>
         </div>
       </main>
     </div>

@@ -11,6 +11,7 @@ type Props = {
   additionalScope?: any;
   wrapInProvider?: boolean;
   network?: string;
+  setSelectedChain?: string;
 };
 
 const defaultScope = {
@@ -19,7 +20,7 @@ const defaultScope = {
 };
 
 function LiveCodeEditor({ code, additionalScope }: Props) {
-  const [selectedChain, setSelectedChain] = useState("mumbai");
+  const [selectedChain, setSelectedChain] = useState("");
 
   const handleChainChange = (e: { target: { value: string } }) => {
     setSelectedChain(e.target.value);

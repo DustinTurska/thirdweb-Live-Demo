@@ -34,5 +34,7 @@ const code = `function App() {
 }`;
 
 export default function UseOwnedNFTs() {
-  return <LiveCodeEditor code={code} additionalScope={scope} />;
+  return <LiveCodeEditor code={code} additionalScope={scope} 
+    network=""
+  />;
 }
