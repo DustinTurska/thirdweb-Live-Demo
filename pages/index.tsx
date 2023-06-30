@@ -39,6 +39,27 @@ const Home: NextPage = () => {
               Live code editor for thirdweb Metadata hooks
             </p>
           </a>
+
+          <a href="./marketplace" className={styles.card}>
+            <h2>Marketplace &rarr;</h2>
+            <p>
+              Live code editor for thirdweb Marketplace v3
+            </p>
+          </a>
+
+          <a href="./auth" className={styles.card}>
+            <h2>Auth &rarr;</h2>
+            <p>
+              Live code editor for thirdweb auth
+            </p>
+          </a>
+
+          <a href="./tokens" className={styles.card}>
+            <h2>Tokens &rarr;</h2>
+            <p>
+              Live code editor for thirdweb Tokens
+            </p>
+          </a>
         </div>
       </main>
     </div>

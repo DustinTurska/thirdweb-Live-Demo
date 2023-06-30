@@ -1,6 +1,6 @@
 import { useState } from "react";
 import ChainContext from "../context/Chain";
-import { ThirdwebProvider } from "@thirdweb-dev/react";
+import { ThirdwebProvider, coinbaseWallet, magicLink, metamaskWallet, paperWallet, rainbowWallet, safeWallet, walletConnect } from "@thirdweb-dev/react";
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from "react-live";
 import styles from "../styles/Home.module.css"
 import React from "react";
@@ -28,7 +28,10 @@ function LiveCodeEditor({ code, additionalScope }: Props) {
 
   return (
     <ChainContext.Provider value={{ selectedChain, setSelectedChain }}>
-      <ThirdwebProvider activeChain={selectedChain}>
+      <ThirdwebProvider 
+        activeChain={selectedChain}
+        supportedWallets={[metamaskWallet(), coinbaseWallet(), walletConnect()]}
+        >
         <LiveProvider
           code={code}
           scope={{

@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/bin/yarn add prism-react-renderer/themes/vsLight
+  /usr/local/bin/node /usr/local/bin/yarn add @thirdweb-dev/auth/next-auth
 
 PATH: 
   /usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/dustinturska/.foundry/bin
@@ -14,7 +14,7 @@ Platform:
   darwin arm64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/prism-react-renderer%2fthemes/vsLight: Request "https://registry.yarnpkg.com/prism-react-renderer%2fthemes/vsLight" returned a 405
+  Error: https://registry.yarnpkg.com/@thirdweb-dev%2fauth/next-auth: Request "https://registry.yarnpkg.com/@thirdweb-dev%2fauth/next-auth" returned a 405
       at params.callback [as _callback] (/usr/local/lib/node_modules/yarn/lib/cli.js:66154:18)
       at self.callback (/usr/local/lib/node_modules/yarn/lib/cli.js:140890:22)
       at Request.emit (node:events:513:28)

@@ -2,7 +2,7 @@ import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import { useState } from "react";
 import ChainContext from "../context/Chain";
-import { ThirdwebProvider } from "@thirdweb-dev/react";
+import { ThirdwebProvider, coinbaseWallet, magicLink, metamaskWallet, paperWallet, rainbowWallet, safeWallet, walletConnect } from "@thirdweb-dev/react";
 import { Navbar } from "../components/Navbar";
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -10,7 +10,10 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <ChainContext.Provider value={{ selectedChain, setSelectedChain }}>
-      <ThirdwebProvider activeChain={selectedChain}>
+      <ThirdwebProvider 
+        activeChain={selectedChain}
+        supportedWallets={[metamaskWallet(), coinbaseWallet(), walletConnect()]}
+        >
         <Navbar />
         <Component {...pageProps} />
       </ThirdwebProvider>
