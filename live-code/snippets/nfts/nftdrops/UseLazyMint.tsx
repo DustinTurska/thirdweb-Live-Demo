@@ -17,12 +17,15 @@ const code = `function App() {
             metadatas: [
               {
                 name: "thirdweb",
-                description: "hellow web3",
+                description: "hello web3",
                 image: "https://bafybeibd3p4wruv4rk4n2xqoozi5xedia32yjkj5jfidyv7p4iskyoe2ha.ipfs-public.thirdwebcdn.com/183095154-2578c28b-1dac-4ffd-9f4b-14eb85657b68.png",
               },
             ],
           })
         }
+        theme="dark"  
+        onError={(error) => alert("Something went wrong!")}
+        onSuccess={(result) => alert("Yay! You've lazy minted an NFT! 🥳")}
       >
         Lazy Mint NFTs
       </Web3Button>

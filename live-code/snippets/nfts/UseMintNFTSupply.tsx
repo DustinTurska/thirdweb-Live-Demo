@@ -19,10 +19,12 @@ const code = `function App() {
       action={() =>
         mintNftSupply({
           additionalSupply: 5, // Quantity to mint
-          to: address, // Address to mint to
+          to: "0xFe62CD02AFF3641B89c6718732c4B5042a78De79", // Address to mint to
           tokenId: 0, // Token ID to add supply to
         })
       }
+      onSuccess={(result) => alert("Yay! NFT Claimed! 🥳")}
+      onError={(error) => alert("Something went wrong!")}
     >
       Mint NFT Supply
     </Web3Button>
