@@ -22,5 +22,7 @@ const code = `function App() {
   }`;
 
 export default function UseBidBuffer() {
-    return <LiveCodeEditor code={code} additionalScope={scope} />;
+  return <LiveCodeEditor code={code} additionalScope={scope} 
+    network=""
+  />;
 }

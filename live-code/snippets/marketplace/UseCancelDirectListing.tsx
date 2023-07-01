@@ -4,6 +4,7 @@ import {
     useContract,
     useCancelDirectListing,
     Web3Button,
+    useLogin
   } from "@thirdweb-dev/react";
 import LiveCodeEditor from "../../LiveCodeEditor";
 
@@ -12,6 +13,7 @@ const scope = {
     useContract,
     useCancelDirectListing,
     Web3Button,
+    useLogin
 };
 
 const code = `function App() {
@@ -39,5 +41,7 @@ const code = `function App() {
   }`;
 
 export default function UseLogin() {
-    return <LiveCodeEditor code={code} additionalScope={scope} />;
+  return <LiveCodeEditor code={code} additionalScope={scope} 
+    network=""
+  />;
 }
