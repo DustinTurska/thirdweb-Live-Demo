@@ -19,6 +19,13 @@ const Home: NextPage = () => {
             </p>
           </a>
 
+          <a href="./marketplace" className={styles.card}>
+            <h2>Marketplace &rarr;</h2>
+            <p>
+              Live code editor for thirdweb Marketplace v3
+            </p>
+          </a>
+
           <a href="./walletconnection" className={styles.card}>
             <h2>Wallet Connection &rarr;</h2>
             <p>
