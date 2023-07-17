@@ -4,6 +4,7 @@ import { useState } from "react";
 import ChainContext from "../context/Chain";
 import { ThirdwebProvider, coinbaseWallet, magicLink, metamaskWallet, paperWallet, rainbowWallet, safeWallet, walletConnect } from "@thirdweb-dev/react";
 import { Navbar } from "../components/Navbar";
+import { PackageInfo } from "../components/PackageInfo";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [selectedChain, setSelectedChain] = useState("ethereum");
@@ -16,6 +17,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         >
         <Navbar />
         <Component {...pageProps} />
+        <PackageInfo />
       </ThirdwebProvider>
     </ChainContext.Provider>
   );

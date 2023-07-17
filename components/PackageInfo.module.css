@@ -1,0 +1,37 @@
+.card {
+    background-color: transparent;
+    border-radius: 4px;
+    padding: 20px;
+    width: 350px;
+    height: 100%;
+    position: fixed;
+    top: 75px;
+    left: 20px;
+  }
+  
+  .card h2 {
+    margin-bottom: 10px;
+  }
+  
+  .card h3 {
+    margin: 20px 0 10px;
+  }
+  
+  .card ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .card li {
+    margin-bottom: 5px;
+  }
+  
+  .card strong {
+    font-weight: bold;
+  }
+  
+  .card .version {
+    color: green;
+  }
+  
